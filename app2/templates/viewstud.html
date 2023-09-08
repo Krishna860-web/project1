@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h1>viewstud</h1>
+        <table>
+            <thead>
+             <th>Name</th>
+             <th>Age</th>
+             <th>Place</th>
+             <th>Mark</th>
+            </thead>
+            <tbody>
+                {% for x in data %}
+                <tr>
+                    <td>{{ x.name }}</td>
+                    <td>{{ x.age }}</td>
+                    <td>{{ x.place }}</td>
+                    <td>{{ x.mark }}</td>
+                </tr>
+             {% endfor %}
+            </tbody>
+        </table>
+
+    </body>
+</html>
